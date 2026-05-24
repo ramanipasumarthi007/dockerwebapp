@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   devopsdb:
-    image: raviraj5678/automation:db
+    image: raviraj5678/firstproject:db
     ports:
       - "3306:3306"
     deploy:
@@ -11,7 +11,7 @@ services:
       - mynetwork
 
   application:
-    image: raviraj5678/automation:app
+    image: raviraj5678/firstproject:app
     ports:
       - "1111:8080"
     deploy:
